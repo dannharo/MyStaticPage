@@ -1,2 +1,19 @@
-<h1>Magma#about_me</h1>
-<p>Find me in app/views/magma/about_me.html.erb</p>
+<% provide(:title, "About Me")
+%>
+<div id="about-me" class="jumbotron mytransparentsection">
+  <div class="container">
+    <h1>About me</h1>
+    <div class="row">
+      <div class="col-lg-2">
+        <img src="<%= asset_path( 'me.jpg' ) %>" width="100%" class="center-block"/>
+      </div>
+      <div class="col-lg-10">
+        <p>Hi, my name is Daniel Orlando Haro Lozano,</br>
+          and this is my first Ruby on Rails app,</br> I'm a Telematics engineer from the University of Colima,
+          I'm from Comala, Colima and I've lived here all my life,
+          I'd like to improve my skills when I develop software and I hope to achieve it</p>
+        <h4>Mail: dannharo@gmail.com</h4>
+      </div>
+    </div>
+  </div>
+</div>

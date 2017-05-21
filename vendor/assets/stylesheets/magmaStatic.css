@@ -1,0 +1,42 @@
+body {
+    background: url("background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.mytransparentsection {
+    background-color: rgba(255,255,255, 0.5);
+    color: inherit;
+}
+footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #9d9d9d;
+    display: block;
+    background-color: #222
+}
+#my-band h4 {
+    padding-top: 1em;
+}
+#my-band h1 {
+    padding-bottom: 1em;
+}
+ #about-me h1{
+     padding-bottom: 1em;
+ }
+ #my-sport h1 h2    {
+     padding-bottom: 1em;
+ }
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:30px !important; padding-bottom:0 !important;
+    height: 80px;
+}
+.navbar {
+    min-height:30px !important;
+    font-size: large;
+}
+.container .row{
+    padding: 10px;
+}

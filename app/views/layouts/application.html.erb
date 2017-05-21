@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyStaticPage</title>
+    <title><%= yield(:title)%></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container" >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/magma/about_me">Daniel Haro</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "About Me",   magma_about_me_path%></li>
+          <li><%= link_to "Favorite Sport",  magma_my_sport_path %></li>
+          <li><%= link_to "Favorite Band",   magma_my_band_path %></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
   <body>
-    <%= yield %>
+  <div class="container container-magma"">
+  <%= yield %>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <span>&copy; Copyright 2017. Daniel Haro</span>
+        </div>
+      </div>
+    </div>
+  </footer>
   </body>
 </html>

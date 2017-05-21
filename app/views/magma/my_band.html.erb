@@ -1,2 +1,33 @@
-<h1>Magma#my_band</h1>
-<p>Find me in app/views/magma/my_band.html.erb</p>
+<% provide(:title, "Favorite Band")
+%>
+<div id="my-band" class="jumbotron mytransparentsection">
+  <div class="container">
+    <div class="row">
+  <h1>My favorite Band</h1>
+  <p>
+    Well, I don't have a favorite band,but I like <b>Cafe Tacvba</b>, <b>Queen</b>, <b>Metallica</b>.
+    </br>
+    I've checked my spotify account and I realize that the band or musical group that is more often repeated is <b>"Los ángeles azules"</b> xD
+  </br>
+    My favorite singer is <b>Joaquin Sabina</b>, is a singer, songwriter, and poet.
+  </p>
+
+  </div>
+    <div class="row text-center">
+    <div class="col-md-4">
+      <img src="<%= asset_path( 'Sabina.png' ) %>" width="75%" class="center-block img-rounded" title="Joaquín sabina"/>
+      <h4>Joaquín Sabina</h4>
+
+    </div>
+    <div class="col-md-4">
+      <img src="<%= asset_path( 'angeles_azules.jpg' ) %>" width="75%" class="center-block img-rounded" title="ángeles azules" />
+      <h4>Ángeles azules</h4>
+
+    </div>
+    <div class="col-md-4">
+      <img src="<%= asset_path( 'tacvba.JPG' ) %>" width="75%" class="center-block img-rounded" title="Café tacvba"/>
+      <h4>Café Tacvba</h4>
+    </div>
+    </div>
+</div>
+</div>

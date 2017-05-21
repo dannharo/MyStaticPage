@@ -1,2 +1,22 @@
-<h1>Magma#my_sport</h1>
-<p>Find me in app/views/magma/my_sport.html.erb</p>
+<% provide(:title, "Favorite sport")
+%>
+<div id="my-sport" class="jumbotron mytransparentsection">
+  <div class="container">
+    <h1>My favorite Sport</h1>
+    <h2>Basketball</h2>
+    <div class="row">
+      <div class="col-lg-12">
+        <img src="<%= asset_path( 'basketball.jpg' ) %>" width="50%" class="center-block img-rounded" title="Joaquín sabina"/>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-12">
+        <p>My favorite sport is basketball</br>
+          I really enjoy play basketball on my free time, playing with friends or with my brothers,
+          </br>My father taught me to play when I was on middle school, and now we play in the same team in a tournament here in colima..
+
+          </p>
+      </div>
+    </div>
+    </div>
+  </div>
